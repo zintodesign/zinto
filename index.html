@@ -14,7 +14,7 @@
 
 <main>
     <div class="grid" id="portfolio-grid">
-        <!-- As imagens vão aparecer aqui automaticamente -->
+        <!-- As artes e vídeos vão aparecer aqui automaticamente -->
     </div>
 </main>
 
@@ -23,25 +23,38 @@
 </footer>
 
 <script>
-    const pasta = 'projetos/'; // pasta onde suas imagens estão
-    const imagens = [
+    const pasta = 'projetos/'; // pasta onde estão suas artes e vídeos
+    const arquivos = [
         'arte1.jpg',
         'arte2.png',
-        'arte3.jpg',
-        'arte4.png'
-        // aqui você só coloca os nomes das imagens que tiver na pasta
+        'video1.mp4',
+        'arte3.jpg'
+        // adicione aqui os nomes dos arquivos da pasta
     ];
 
     const grid = document.getElementById('portfolio-grid');
 
-    imagens.forEach(img => {
+    arquivos.forEach(file => {
         const div = document.createElement('div');
         div.className = 'projeto';
-        div.innerHTML = `
-            <a href="${pasta + img}" target="_blank">
-                <img src="${pasta + img}" alt="${img}">
-            </a>
-        `;
+
+        if (file.endsWith('.mp4')) {
+            // vídeo
+            div.innerHTML = `
+                <video controls>
+                    <source src="${pasta + file}" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            `;
+        } else {
+            // imagem
+            div.innerHTML = `
+                <a href="${pasta + file}" target="_blank">
+                    <img src="${pasta + file}" alt="${file}">
+                </a>
+            `;
+        }
+
         grid.appendChild(div);
     });
 </script>
