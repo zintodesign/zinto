@@ -1,5 +1,3 @@
-
-/* ===== Estilo Global ===== */
 body {
     font-family: Arial, sans-serif;
     background-color: #fefefe;
@@ -8,31 +6,58 @@ body {
     color: #333;
 }
 
-/* ===== Cabeçalho ===== */
 header {
     background-color: #4a90e2;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 25px 20px;
 }
 
 header h1 {
     margin: 0;
 }
 
-/* ===== Conteúdo principal ===== */
 main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* ===== Grid de projetos ===== */
 .grid {
     display: grid;
-    g
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.projeto {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+}
+
+.projeto img, .projeto video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+@media(max-width: 600px){
+    header, footer {
+        padding: 20px 10px;
+    }
+}
