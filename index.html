@@ -1,139 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>ZintoDesign | Portfólio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f19;
-      color: #e5e7eb;
-    }
-
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #7c3aed, #22d3ee);
-      color: #020617;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background: #020617;
-      padding: 15px;
-    }
-
-    nav button {
-      background: none;
-      border: none;
-      color: #e5e7eb;
-      font-size: 16px;
-      cursor: pointer;
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-
-    nav button.active,
-    nav button:hover {
-      background: #7c3aed;
-    }
-
-    section {
-      display: none;
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    section.active {
-      display: block;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .card img,
-    .card video {
-      width: 100%;
-      display: block;
-    }
-
-    .card p {
-      padding: 10px;
-      font-size: 14px;
-      color: #cbd5f5;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #94a3b8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-  <h1>ZintoDesign</h1>
-  <p>Edições de Vídeo & Design Visual</p>
-</header>
-
-<nav>
-  <button class="active" onclick="showTab('videos')">🎬 Minhas Edições</button>
-  <button onclick="showTab('fotos')">📸 Design de Fotos</button>
-</nav>
-
-<section id="videos" class="active">
-  <h2>🎬 Minhas Edições de Vídeo</h2>
-  <div class="grid">
-    <div class="card">
-      <video src="assets/videos/video1.mp4" controls></video>
-      <p>Edição para cliente X</p>
-    </div>
-  </div>
-</section>
-
-<section id="fotos">
-  <h2>📸 Design de Fotos</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="assets/fotos/foto1.jpg" alt="Design Foto">
-      <p>Arte para Instagram</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 • ZintoDesign — Todos os direitos reservados
-</footer>
-
-<script>
-  function showTab(tabId) {
-    document.querySelectorAll("section").forEach(sec => {
-      sec.classList.remove("active");
-    });
-
-    document.querySelectorAll("nav button").forEach(btn => {
-      btn.classList.remove("active");
-    });
-
-    document.getElementById(tabId).classList.add("active");
-    event.target.classList.add("active");
-  }
-</script>
-
+    <h1>Página Ativada com Sucesso!</h1>
 </body>
 </html>
