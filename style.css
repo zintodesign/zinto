@@ -1,1 +1,38 @@
 
+/* ===== Estilo Global ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* ===== Conteúdo principal ===== */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Grid de projetos ===== */
+.grid {
+    display: grid;
+    g
