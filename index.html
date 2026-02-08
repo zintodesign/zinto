@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Edições e Arts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.03);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .portfolio-item p {
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsivo simples */
+        @media(max-width: 600px){
+            header, footer {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio de Edições e Arts</h1>
+    </header>
+
+    <main>
+        <h2>Trabalhos Recentes</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Arte+1" alt="Arte 1">
+                <p>Arte 1</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Arte+2" alt="Arte 2">
+                <p>Arte 2</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Arte+3" alt="Arte 3">
+                <p>Arte 3</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x300?text=Arte+4" alt="Arte 4">
+                <p>Arte 4</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Meu Portfólio de Edições e Arts
+    </footer>
+</body>
+</html>
